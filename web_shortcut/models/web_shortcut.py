@@ -6,6 +6,7 @@ from odoo import models, fields, api
 
 class WebShortcut(models.Model):
     _name = 'web.shortcut'
+    _description = "Web Shortcuts"
 
     name = fields.Char('Shortcut Name')
     menu_id = fields.Many2one('ir.ui.menu', ondelete='cascade')
