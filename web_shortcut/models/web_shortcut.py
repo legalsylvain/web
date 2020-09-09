@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Copyright 2004-today Odoo SA (<http://www.odoo.com>)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
@@ -8,7 +7,7 @@ from odoo import models, fields, api
 class WebShortcut(models.Model):
     _name = 'web.shortcut'
 
-    name = fields.Char('Shortcut Name', size=64)
+    name = fields.Char('Shortcut Name')
     menu_id = fields.Many2one('ir.ui.menu', ondelete='cascade')
     user_id = fields.Many2one('res.users', 'User Ref.', required=True,
                               ondelete='cascade', index=True,
