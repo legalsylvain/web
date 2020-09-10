@@ -46,7 +46,7 @@ class TileCategory(models.Model):
             'type': 'ir.actions.act_window',
             'view_mode': 'kanban',
             'domain': "["
-            "'('hidden', '=', False),"
+            "('hidden', '=', False),"
             "'|', ('user_id', '=', False), ('user_id', '=', uid),"
             "('category_id', '=', %d)"
             "]" % self.id,
